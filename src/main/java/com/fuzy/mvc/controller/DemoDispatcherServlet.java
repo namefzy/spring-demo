@@ -23,7 +23,34 @@ public class DemoDispatcherServlet extends HttpServlet {
         doInstance();
         //DI依赖注入
         doAutowired();
-        
+        //初始化HandlerMapping
+        initHandlerMapping();
+        //初始化HandlerAdapter
+        initHanlderAdapter();
+    }
+
+    private void initHanlderAdapter() {
+
+    }
+
+    private void initHandlerMapping() {
+
+    }
+
+    private void doAutowired() {
+
+    }
+
+    private void doInstance() {
+
+    }
+
+    private void doScanner(String packageName) {
+
+    }
+
+    private String loadConfig() {
+        return null;
     }
 
     @Override
@@ -40,8 +67,6 @@ public class DemoDispatcherServlet extends HttpServlet {
      * 具体的请求分发啊
      * @author fuzy
      * @date  2020/3/30 18:17
-     * @param request
-     * @param response
      */
     private void doDispatch() {
 
